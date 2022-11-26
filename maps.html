@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css" integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js" integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+
+    <title>Leaflet Online Map</title>
+</head>
+<body>
+    <h1>Top 10 Places I want to visit: Japan Edition</h1>
+    <div id="map" style ="height: 500px;"></div>
+        <script>
+
+        var map = L.map('map').setView([51.505, -0.09], 13);
+
+        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            maxZoom: 19,
+            attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        var circle = L.circle([35.36277, 138.73078], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([35.36277, 138.73078])
+        .setContent("1. Mount Fuji, Oyama, Sunto County, Shizuoka Prefecture")
+        .addTo(map);
+
+        var circle = L.circle([35.6838, 139.75], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([35.6838, 139.75])
+        .setContent("2. Imperial Palace, Daikancho-dori, Kitanomaru Park, Chiyoda, Tokyo")
+        .addTo(map);
+
+        var circle = L.circle([34.39544, 132.45359], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([34.39544, 132.45359])
+        .setContent("3. Hiroshima Peace Memorial (Genbaku Dome), 10, Aioi dori Avenue, Kamiyacho 2-chome, Naka Ward, Hiroshima, Hiroshima Prefecture")
+        .addTo(map);
+
+        var circle = L.circle([34.9795, 135.74906], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([34.9795, 135.74906])
+        .setContent("4. World Cultural Heritage Sites Historic Monuments of Ancient Kyoto, Kujo-dori St., 西九条比永城町, Minami Ward, Kyoto, Kyoto Prefecture")
+        .addTo(map);
+
+        var circle = L.circle([34.2717, 132.3108], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([34.2717, 132.3108])
+        .setContent("5. Itsukushima Island, Hatsukaichi, Hiroshima Prefecture")
+        .addTo(map);
+
+        var circle = L.circle([34.6818, 135.8054], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([34.6818, 135.8054])
+        .setContent("6. Nara, Nara Prefecture, Japan")
+        .addTo(map);
+
+        var circle = L.circle([34.68735, 135.52586], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([34.68735, 135.52586])
+        .setContent("7. Osaka Castle, Gokuraku Bridge, Osakajo, Chuo, Osaka Prefecture")
+        .addTo(map);
+
+        var circle = L.circle([35.185, 136.9013], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([35.185, 136.9013])
+        .setContent("8. Nagoya, Aichi Prefecture")
+        .addTo(map);
+
+        var circle = L.circle([33.5849, 130.4022], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([33.5849, 130.4022])
+        .setContent("9. Fukuoka, Fukuoka Prefecture")
+        .addTo(map);
+
+        var circle = L.circle([43.0634, 141.3549], {
+            color: 'red',
+            fillColor: '#f03',
+            fillOpacity: 0.5,
+            radius: 500
+        }).addTo(map);
+        var popup = L.popup()
+        .setLatLng([43.0634, 141.3549])
+        .setContent("10. Sapporo, Ishikari Subprefecture, Hokkaido Prefecture")
+        .addTo(map);
+    </script>
+</body>
+</html>
