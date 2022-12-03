@@ -132,6 +132,22 @@
         .setLatLng([43.0634, 141.3549])
         .setContent("10. Sapporo, Ishikari Subprefecture, Hokkaido Prefecture")
         .addTo(map);
+
+        // create a red polyline from an array of arrays of LatLng points
+    var latlngs = [
+    [[50, -100.68],
+     [50, -122.43],
+     [50, -118.2]],
+     [[50, -122.43],
+     [60, -122.43],
+     [70, -122.43]],
+     [[70, -100.68],
+     [70, -122.43],
+     [70, -118.2]],
+    ];
+
+    var polyline = L.polyline(latlngs, {color: 'red'}).addTo(map);
+
     </script>
 </body>
 </html>
